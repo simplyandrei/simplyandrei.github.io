@@ -6,21 +6,6 @@ import { BiLogoReact } from "react-icons/bi";
 import { CgFramer } from "react-icons/cg";
 import { motion } from "framer-motion";
 
-function iconVariants(duration: number) {
-  return {
-    initial: { y: -10 },
-    animate: {
-      y: [10, -10],
-      transition: {
-        duration: duration,
-        ease: "linear",
-        repeat: Infinity,
-        repeatType: "reverse",
-      },
-    },
-  };
-}
-
 function Technologies() {
   return (
     <div className="border-b border-neutral-800 pb-24">
@@ -39,7 +24,18 @@ function Technologies() {
         className="flex flex-wrap items-center justify-center gap-4"
       >
         <motion.div
-          variants={iconVariants(2.5)}
+          variants={{
+            initial: { y: -10 },
+            animate: {
+              y: [10, -10],
+              transition: {
+                duration: 2.5,
+                ease: "linear",
+                repeat: Infinity,
+                repeatType: "reverse",
+              },
+            },
+          }}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
@@ -47,7 +43,18 @@ function Technologies() {
           <BiLogoJavascript className="text-7xl text-yellow-300" />
         </motion.div>
         <motion.div
-          variants={iconVariants(3)}
+          variants={{
+            initial: { y: -10 },
+            animate: {
+              y: [10, -10],
+              transition: {
+                duration: 3,
+                ease: "linear",
+                repeat: Infinity,
+                repeatType: "reverse",
+              },
+            },
+          }}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
@@ -55,7 +62,18 @@ function Technologies() {
           <BiLogoTypescript className="text-7xl text-blue-500" />
         </motion.div>
         <motion.div
-          variants={iconVariants(5)}
+          variants={{
+            initial: { y: -10 },
+            animate: {
+              y: [10, -10],
+              transition: {
+                duration: 5,
+                ease: "linear",
+                repeat: Infinity,
+                repeatType: "reverse",
+              },
+            },
+          }}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
@@ -63,7 +81,18 @@ function Technologies() {
           <BiLogoPython className="text-7xl text-neutral-300" />
         </motion.div>
         <motion.div
-          variants={iconVariants(2)}
+          variants={{
+            initial: { y: -10 },
+            animate: {
+              y: [10, -10],
+              transition: {
+                duration: 3,
+                ease: "linear",
+                repeat: Infinity,
+                repeatType: "reverse",
+              },
+            },
+          }}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
@@ -71,7 +100,18 @@ function Technologies() {
           <BiLogoHtml5 className="text-7xl text-orange-500" />
         </motion.div>
         <motion.div
-          variants={iconVariants(2.5)}
+          variants={{
+            initial: { y: -10 },
+            animate: {
+              y: [10, -10],
+              transition: {
+                duration: 2.5,
+                ease: "linear",
+                repeat: Infinity,
+                repeatType: "reverse",
+              },
+            },
+          }}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
@@ -79,7 +119,18 @@ function Technologies() {
           <BiLogoReact className="text-7xl text-blue-500" />
         </motion.div>
         <motion.div
-          variants={iconVariants(3)}
+          variants={{
+            initial: { y: -10 },
+            animate: {
+              y: [10, -10],
+              transition: {
+                duration: 3,
+                ease: "linear",
+                repeat: Infinity,
+                repeatType: "reverse",
+              },
+            },
+          }}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
